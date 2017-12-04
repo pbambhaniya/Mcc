@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_def_dp" />
+
+    <View
+        android:layout_below="@+id/img_dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-5dp"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayDark"></View>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txt_follow"
+        android:layout_toRightOf="@+id/img_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_expert_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="start"
+            android:text="Expert Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_expert_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="start"
+            android:text="Nutritionlist"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_experiense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="3 Years Of Experiense"
+            android:textColor="@color/colorTextHint"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_pro_back" />
+
+
+</RelativeLayout>

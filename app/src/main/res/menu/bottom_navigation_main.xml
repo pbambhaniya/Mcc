@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_feed"
+        android:enabled="true"
+        android:icon="@mipmap/ic_feed_active"
+        android:title="Feed"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_notification"
+        android:enabled="true"
+        android:icon="@mipmap/ic_notificatiom_unactivate"
+        android:title="Notification"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_expert"
+        android:enabled="true"
+        android:icon="@mipmap/ic_expert_unactivate"
+        android:title="Expert"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_chat"
+        android:enabled="true"
+        android:icon="@mipmap/ic_chat_unactivate"
+        android:title="Chat"
+        app:showAsAction="ifRoom" />
+</menu>

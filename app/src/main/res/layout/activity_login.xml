@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="30dp"
+            android:src="@drawable/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorGrayDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/custEditDef"
+                android:id="@+id/edt_uid"
+                android:hint="Enter E-mail"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/cust_divider" />
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorGrayDark"
+            android:theme="@style/TextLabel"
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/custEditDef"
+                android:id="@+id/edt_pwd"
+                android:inputType="textPassword"
+                android:hint="Enter Password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/cust_divider" />
+        <!--<TextView
+            android:layout_marginTop="20dp"
+            style="@style/custHintText"
+            android:text="Enter Password"/>
+
+        <EditText
+            style="@style/custEdit"/>-->
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/lnr_login_fb"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorFbBg"
+            android:gravity="center"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="0dp"
+                android:src="@mipmap/ic_facebook" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Login With Facebook"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_login_gp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGpBg"
+            android:gravity="center"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="4dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_gmail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Login With Google"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have Account?" />
+
+            <TextView
+                android:id="@+id/txt_signup"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Signup"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_skip"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:text="Skip for now"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

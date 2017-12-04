@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_profile"
+            style="@style/cust_setting_txt"
+            android:text="My Profile"/>
+
+        <ImageView
+            android:id="@+id/img_profile"
+            style="@style/cust_setting_img"/>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/img_profile"
+            style="@style/cust_divider_gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_preferences"
+            style="@style/cust_setting_txt"
+            android:text="News Feed Preferences"/>
+
+        <ImageView
+            android:id="@+id/img_preferences"
+            style="@style/cust_setting_img"/>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/img_preferences"
+            style="@style/cust_divider_gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_policy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_policy"
+            style="@style/cust_setting_txt"
+            android:text="Privacy Policy"/>
+
+        <ImageView
+            android:id="@+id/img_policy"
+            style="@style/cust_setting_img"/>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/img_policy"
+            style="@style/cust_divider_gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_terms"
+            style="@style/cust_setting_txt"
+            android:text="Terms &amp; Conditions"/>
+
+        <ImageView
+            android:id="@+id/img_terms"
+            style="@style/cust_setting_img"/>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/img_terms"
+            style="@style/cust_divider_gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_toLeftOf="@+id/img_about"
+            style="@style/cust_setting_txt"
+            android:text="About"/>
+
+        <ImageView
+            android:id="@+id/img_about"
+            style="@style/cust_setting_img"/>
+
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/img_about"
+            style="@style/cust_divider_gray"/>
+    </RelativeLayout>
+
+</LinearLayout>

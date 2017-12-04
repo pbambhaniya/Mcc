@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyCityCare</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">163118771090709</string>
+
+    <string name="User_Text">If You Are <font color="#03acab">USER</font>  Then Click On User Button</string>
+
+
+    <string-array name="prefix">
+        <item>Dr.</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+    </string-array>
+</resources>

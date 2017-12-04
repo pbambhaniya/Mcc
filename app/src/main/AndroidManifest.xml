@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.multipz.mcc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".AppController"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.ActivitySplash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ActivityLogin" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.ActivityMenu" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ActivityPost" android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/> -->
+        <activity android:name=".activity.ActivityUserType" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivitySignup" android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+        <activity android:name=".activity.ActivityRegistration" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityRegistration1" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityRegistration2" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityProduct" android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".activity.ActivityNewsPreferences" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityExpertDetail" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityStoryView" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityAddInquiry" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.ActivityDevelopment" android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

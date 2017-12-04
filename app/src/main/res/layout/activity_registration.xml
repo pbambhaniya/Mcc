@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_next_step"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_prog_1"
+                style="@style/cust_prog_bar_txt"
+                android:background="@color/colorPrimary"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/txt_prog_2"
+                style="@style/cust_prog_bar_txt"
+                android:layout_centerInParent="true"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/txt_prog_3"
+                style="@style/cust_prog_bar_txt"
+                android:layout_alignParentRight="true"
+                android:text="3" />
+
+            <View
+                android:id="@+id/div_pro_2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/txt_prog_2"
+                android:layout_toRightOf="@+id/txt_prog_1"
+                android:background="@color/colorGrayDark"></View>
+
+            <View
+                android:id="@+id/div_pro_3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/txt_prog_3"
+                android:layout_toRightOf="@+id/txt_prog_2"
+                android:background="@color/colorGrayDark"></View>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_profile"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_def_story"
+                app:civ_border_color="#CCCCCC"
+                app:civ_border_width="1dp" />
+
+            <ImageView
+                android:id="@+id/img_profile_upload"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/ic_check_right_wallet" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Registration Details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/custHintText"
+                    android:text="Specialization" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spn_specialization"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drawable_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/prefix"
+                        android:gravity="bottom" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_dropdown" />
+
+                </RelativeLayout>
+
+
+                <View style="@style/cust_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/custHintText"
+                    android:text="Sub Category" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spn_sub_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drawable_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/prefix" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_dropdown" />
+
+                </RelativeLayout>
+
+
+                <View style="@style/cust_divider" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/custHintText"
+                    android:text="Qualification" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spn_qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drawable_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/prefix"
+                        android:gravity="bottom" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_dropdown" />
+
+                </RelativeLayout>
+
+                <View style="@style/cust_divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/custHintText"
+                    android:text="Enter Experience" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spn_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drawable_spinner"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/prefix" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_dropdown" />
+
+                </RelativeLayout>
+
+                <View style="@style/cust_divider" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorGrayDark"
+            android:theme="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_regi_no"
+                style="@style/custEditDef"
+                android:hint="Registration Number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/cust_divider" />
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorGrayDark"
+            android:theme="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_hospital_name"
+                style="@style/custEditDef"
+                android:hint="Hospital Name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/cust_divider" />
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="@color/colorGrayDark"
+            android:theme="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_hospital_address"
+                style="@style/custEditDef"
+                android:hint="Hospital Address" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View style="@style/cust_divider" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Next"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+</RelativeLayout>
